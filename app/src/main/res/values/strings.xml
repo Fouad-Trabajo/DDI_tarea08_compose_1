@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">tarea08Compose1DDI</string>
-    <string name="featured">Destacado</string>
+    <string name="featured">Destacados</string>
     <string name="buy_category">Compra por categoría</string>
     <string name="home">Hogar y cocina</string>
     <string name="clothe_women">Ropa de mujer</string>

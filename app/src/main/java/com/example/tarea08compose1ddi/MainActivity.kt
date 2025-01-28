@@ -57,12 +57,12 @@ class MainActivity : ComponentActivity() {
                     verticalAlignment = Alignment.CenterVertically){
 
                     Text(stringResource(id = R.string.home), modifier = Modifier.weight(1f))
-                    Images(R.drawable.img_01)
-                    Images(R.drawable.img_02)
-                    Images(R.drawable.img_03)
+                    Images(R.drawable.img_maquillaje)
+                    Images(R.drawable.img_blusa)
+                    Images(R.drawable.img_pantalon)
                 }
                 Row(modifier = Modifier.padding(10.dp)){
-                    Text(stringResource(R.string.clothe_women), modifier = Modifier.width(80.dp))
+                    Text(stringResource(R.string.clothe_women), modifier = Modifier.width(60.dp))
                     Text(
                         stringResource(R.string.make_up),
                         modifier = Modifier.weight(1f),
@@ -74,7 +74,7 @@ class MainActivity : ComponentActivity() {
                         textAlign = TextAlign.Center
                     )
                     Text(
-                        stringResource(R.string.shoes_women),
+                        stringResource(R.string.pants_women),
                         modifier = Modifier.weight(1f),
                         textAlign = TextAlign.Center
                     )
@@ -85,12 +85,12 @@ class MainActivity : ComponentActivity() {
                     .padding(10.dp),
                     verticalAlignment = Alignment.CenterVertically){
                     Text(stringResource(R.string.sizes_women), modifier = Modifier.weight(1f))
-                    Images(R.drawable.img_04)
-                    Images(R.drawable.img_05)
-                    Images(R.drawable.img_06)
+                    Images(R.drawable.img_blusas)
+                    Images(R.drawable.img_belleza)
+                    Images(R.drawable.img_cabello)
                 }
                 Row(modifier = Modifier.padding(10.dp)){
-                    Text(stringResource(R.string.shoes_women), modifier = Modifier.weight(1f))
+                    Text(stringResource(R.string.shoes_women), modifier = Modifier.width(70.dp))
                     Text(
                         stringResource(R.string.dress_women),
                         modifier = Modifier.weight(1f),
@@ -113,12 +113,12 @@ class MainActivity : ComponentActivity() {
                     .padding(10.dp),
                     verticalAlignment = Alignment.CenterVertically){
                     Text(stringResource(R.string.pajamas_women), modifier = Modifier.weight(1f))
-                    Images(R.drawable.img_07)
-                    Images(R.drawable.img_08)
-                    Images(R.drawable.img_09)
+                    Images(R.drawable.img_cuidado_personal)
+                    Images(R.drawable.img_top)
+                    Images(R.drawable.img_conjunto)
                 }
                 Row(modifier = Modifier.padding(10.dp)){
-                    Text(stringResource(R.string.clothes_men), modifier = Modifier.weight(1f))
+                    Text(stringResource(R.string.clothes_men), modifier = Modifier.width(60.dp))
                     Text(
                         stringResource(R.string.personal_care),
                         modifier = Modifier.weight(1f),
@@ -141,12 +141,12 @@ class MainActivity : ComponentActivity() {
                     .padding(10.dp),
                     verticalAlignment = Alignment.CenterVertically){
                     Text(stringResource(R.string.shoes_men), modifier = Modifier.weight(1f))
-                    Images(R.drawable.img_10)
-                    Images(R.drawable.img_12)
-                    Images(R.drawable.img_11)
+                    Images(R.drawable.img_camiseta_hombre)
+                    Images(R.drawable.img_fitness)
+                    Images(R.drawable.img_juguete_electronico)
                 }
                 Row(modifier = Modifier.padding(10.dp)){
-                    Text(stringResource(R.string.sizes_men), modifier = Modifier.weight(1f))
+                    Text(stringResource(R.string.sizes_men), modifier = Modifier.width(80.dp))
                     Text(
                         stringResource(R.string.clothes_men),
                         modifier = Modifier.weight(1f),
@@ -234,12 +234,12 @@ fun Preview() {
             verticalAlignment = Alignment.CenterVertically){
 
             Text(stringResource(id = R.string.home), modifier = Modifier.weight(1f))
-            Images(R.drawable.img_01)
-            Images(R.drawable.img_02)
-            Images(R.drawable.img_03)
+            Images(R.drawable.img_maquillaje)
+            Images(R.drawable.img_blusa)
+            Images(R.drawable.img_pantalon)
         }
         Row(modifier = Modifier.padding(10.dp)){
-            Text(stringResource(R.string.clothe_women), modifier = Modifier.width(80.dp))
+            Text(stringResource(R.string.clothe_women), modifier = Modifier.width(60.dp))
             Text(
                 stringResource(R.string.make_up),
                 modifier = Modifier.weight(1f),
@@ -251,7 +251,7 @@ fun Preview() {
                 textAlign = TextAlign.Center
             )
             Text(
-                stringResource(R.string.shoes_women),
+                stringResource(R.string.pants_women),
                 modifier = Modifier.weight(1f),
                 textAlign = TextAlign.Center
             )
@@ -262,12 +262,12 @@ fun Preview() {
             .padding(10.dp),
             verticalAlignment = Alignment.CenterVertically){
             Text(stringResource(R.string.sizes_women), modifier = Modifier.weight(1f))
-            Images(R.drawable.img_04)
-            Images(R.drawable.img_05)
-            Images(R.drawable.img_06)
+            Images(R.drawable.img_blusas)
+            Images(R.drawable.img_belleza)
+            Images(R.drawable.img_cabello)
         }
         Row(modifier = Modifier.padding(10.dp)){
-            Text(stringResource(R.string.shoes_women), modifier = Modifier.weight(1f))
+            Text(stringResource(R.string.shoes_women), modifier = Modifier.width(70.dp))
             Text(
                 stringResource(R.string.dress_women),
                 modifier = Modifier.weight(1f),
@@ -290,12 +290,12 @@ fun Preview() {
             .padding(10.dp),
             verticalAlignment = Alignment.CenterVertically){
             Text(stringResource(R.string.pajamas_women), modifier = Modifier.weight(1f))
-            Images(R.drawable.img_07)
-            Images(R.drawable.img_08)
-            Images(R.drawable.img_09)
+            Images(R.drawable.img_cuidado_personal)
+            Images(R.drawable.img_top)
+            Images(R.drawable.img_conjunto)
         }
         Row(modifier = Modifier.padding(10.dp)){
-            Text(stringResource(R.string.clothes_men), modifier = Modifier.weight(1f))
+            Text(stringResource(R.string.clothes_men), modifier = Modifier.width(60.dp))
             Text(
                 stringResource(R.string.personal_care),
                 modifier = Modifier.weight(1f),
@@ -318,12 +318,12 @@ fun Preview() {
             .padding(10.dp),
             verticalAlignment = Alignment.CenterVertically){
             Text(stringResource(R.string.shoes_men), modifier = Modifier.weight(1f))
-            Images(R.drawable.img_10)
-            Images(R.drawable.img_12)
-            Images(R.drawable.img_11)
+            Images(R.drawable.img_camiseta_hombre)
+            Images(R.drawable.img_fitness)
+            Images(R.drawable.img_juguete_electronico)
         }
         Row(modifier = Modifier.padding(10.dp)){
-            Text(stringResource(R.string.sizes_men), modifier = Modifier.weight(1f))
+            Text(stringResource(R.string.sizes_men), modifier = Modifier.width(80.dp))
             Text(
                 stringResource(R.string.clothes_men),
                 modifier = Modifier.weight(1f),
