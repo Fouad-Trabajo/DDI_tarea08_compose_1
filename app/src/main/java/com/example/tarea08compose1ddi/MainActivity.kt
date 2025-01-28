@@ -1,6 +1,5 @@
 package com.example.tarea08compose1ddi
 
-import android.media.Image
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -47,62 +46,122 @@ class MainActivity : ComponentActivity() {
             Column(modifier = Modifier.fillMaxSize()) {
                 TopAppBar()
                 Row(modifier = Modifier.fillMaxWidth()) {
-                    HeadText("Destacado")
-                    HeadText("Compra por categoría")
+                    HeadText(stringResource(id = R.string.featured))
+                    HeadText(stringResource(id = R.string.buy_category))
                 }
-                Row(modifier = Modifier.fillMaxWidth().padding(10.dp).weight(1f),
+                Row(modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(10.dp)
+                    .weight(1f),
                     horizontalArrangement = Arrangement.SpaceEvenly,
                     verticalAlignment = Alignment.CenterVertically){
 
-                    Text("Hogar y  cocina", modifier = Modifier.weight(1f))
+                    Text(stringResource(id = R.string.home), modifier = Modifier.weight(1f))
                     Images(R.drawable.img_01)
                     Images(R.drawable.img_02)
                     Images(R.drawable.img_03)
                 }
                 Row(modifier = Modifier.padding(10.dp)){
-                    Text("Ropa de mujer", modifier = Modifier.width(80.dp))
-                    Text("Maquillaje", modifier = Modifier.weight(1f),textAlign = TextAlign.Center)
-                    Text("Blusas y camisas de mujer", modifier = Modifier.weight(1f),textAlign = TextAlign.Center)
-                    Text("Pantalones de mujer", modifier = Modifier.weight(1f),textAlign = TextAlign.Center)
+                    Text(stringResource(R.string.clothe_women), modifier = Modifier.width(80.dp))
+                    Text(
+                        stringResource(R.string.make_up),
+                        modifier = Modifier.weight(1f),
+                        textAlign = TextAlign.Center
+                    )
+                    Text(
+                        stringResource(R.string.shirt_women),
+                        modifier = Modifier.weight(1f),
+                        textAlign = TextAlign.Center
+                    )
+                    Text(
+                        stringResource(R.string.shoes_women),
+                        modifier = Modifier.weight(1f),
+                        textAlign = TextAlign.Center
+                    )
                 }
-                Row(modifier = Modifier.weight(1f).fillMaxWidth().padding(10.dp),
+                Row(modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth()
+                    .padding(10.dp),
                     verticalAlignment = Alignment.CenterVertically){
-                    Text("Tallas plus para mujer", modifier = Modifier.weight(1f))
+                    Text(stringResource(R.string.sizes_women), modifier = Modifier.weight(1f))
                     Images(R.drawable.img_04)
                     Images(R.drawable.img_05)
                     Images(R.drawable.img_06)
                 }
                 Row(modifier = Modifier.padding(10.dp)){
-                    Text("Zapatos de mujer", modifier = Modifier.weight(1f))
-                    Text("Vestidos de mujer",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-                    Text("Herramientas de belleza",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-                    Text("Cuidado del cabello",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
+                    Text(stringResource(R.string.shoes_women), modifier = Modifier.weight(1f))
+                    Text(
+                        stringResource(R.string.dress_women),
+                        modifier = Modifier.weight(1f),
+                        textAlign = TextAlign.Center
+                    )
+                    Text(
+                        stringResource(R.string.tools),
+                        modifier = Modifier.weight(1f),
+                        textAlign = TextAlign.Center
+                    )
+                    Text(
+                        stringResource(R.string.hair),
+                        modifier = Modifier.weight(1f),
+                        textAlign = TextAlign.Center
+                    )
                 }
-                Row(modifier = Modifier.weight(1f).fillMaxWidth().padding(10.dp),
+                Row(modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth()
+                    .padding(10.dp),
                     verticalAlignment = Alignment.CenterVertically){
-                    Text("Lencería y pijamas de mujer", modifier = Modifier.weight(1f))
+                    Text(stringResource(R.string.pajamas_women), modifier = Modifier.weight(1f))
                     Images(R.drawable.img_07)
                     Images(R.drawable.img_08)
                     Images(R.drawable.img_09)
                 }
                 Row(modifier = Modifier.padding(10.dp)){
-                    Text("Ropa de hombre", modifier = Modifier.weight(1f))
-                    Text("Cuidado personal",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-                    Text("Tops de hombre",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-                    Text("Conjuntos de hombre",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
+                    Text(stringResource(R.string.clothes_men), modifier = Modifier.weight(1f))
+                    Text(
+                        stringResource(R.string.personal_care),
+                        modifier = Modifier.weight(1f),
+                        textAlign = TextAlign.Center
+                    )
+                    Text(
+                        stringResource(R.string.top_men),
+                        modifier = Modifier.weight(1f),
+                        textAlign = TextAlign.Center
+                    )
+                    Text(
+                        stringResource(R.string.men_sets),
+                        modifier = Modifier.weight(1f),
+                        textAlign = TextAlign.Center
+                    )
                 }
-                Row(modifier = Modifier.weight(1f).fillMaxWidth().padding(10.dp),
+                Row(modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth()
+                    .padding(10.dp),
                     verticalAlignment = Alignment.CenterVertically){
-                    Text("Calzado de hombre", modifier = Modifier.weight(1f))
+                    Text(stringResource(R.string.shoes_men), modifier = Modifier.weight(1f))
                     Images(R.drawable.img_10)
                     Images(R.drawable.img_12)
                     Images(R.drawable.img_11)
                 }
                 Row(modifier = Modifier.padding(10.dp)){
-                    Text("Tallas grandes de hombre", modifier = Modifier.weight(1f))
-                    Text("Ropa de hombre",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-                    Text("Accesorios de ejercicio y fitness",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-                    Text("Juguetes electrónicos",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
+                    Text(stringResource(R.string.sizes_men), modifier = Modifier.weight(1f))
+                    Text(
+                        stringResource(R.string.clothes_men),
+                        modifier = Modifier.weight(1f),
+                        textAlign = TextAlign.Center
+                    )
+                    Text(
+                        stringResource(R.string.tools_fitness),
+                        modifier = Modifier.weight(1f),
+                        textAlign = TextAlign.Center
+                    )
+                    Text(
+                        stringResource(R.string.electro_games),
+                        modifier = Modifier.weight(1f),
+                        textAlign = TextAlign.Center
+                    )
                 }
             }
         }
@@ -152,7 +211,9 @@ fun Images(img: Int){
         painterResource(id = img),
         contentDescription = "",
         contentScale = ContentScale.Crop,
-        modifier = Modifier.size(100.dp).clip(CircleShape)
+        modifier = Modifier
+            .size(100.dp)
+            .clip(CircleShape)
     )
 }
 
@@ -162,62 +223,122 @@ fun Preview() {
     Column(modifier = Modifier.fillMaxSize()) {
         TopAppBar()
         Row(modifier = Modifier.fillMaxWidth()) {
-            HeadText("Destacado")
-            HeadText("Compra por categoría")
+            HeadText(stringResource(id = R.string.featured))
+            HeadText(stringResource(id = R.string.buy_category))
         }
-        Row(modifier = Modifier.fillMaxWidth().padding(10.dp).weight(1f),
+        Row(modifier = Modifier
+            .fillMaxWidth()
+            .padding(10.dp)
+            .weight(1f),
             horizontalArrangement = Arrangement.SpaceEvenly,
             verticalAlignment = Alignment.CenterVertically){
-            
-            Text("Hogar y  cocina", modifier = Modifier.weight(1f))
+
+            Text(stringResource(id = R.string.home), modifier = Modifier.weight(1f))
             Images(R.drawable.img_01)
             Images(R.drawable.img_02)
             Images(R.drawable.img_03)
         }
         Row(modifier = Modifier.padding(10.dp)){
-            Text("Ropa de mujer", modifier = Modifier.width(80.dp))
-            Text("Maquillaje", modifier = Modifier.weight(1f),textAlign = TextAlign.Center)
-            Text("Blusas y camisas de mujer", modifier = Modifier.weight(1f),textAlign = TextAlign.Center)
-            Text("Pantalones de mujer", modifier = Modifier.weight(1f),textAlign = TextAlign.Center)
+            Text(stringResource(R.string.clothe_women), modifier = Modifier.width(80.dp))
+            Text(
+                stringResource(R.string.make_up),
+                modifier = Modifier.weight(1f),
+                textAlign = TextAlign.Center
+            )
+            Text(
+                stringResource(R.string.shirt_women),
+                modifier = Modifier.weight(1f),
+                textAlign = TextAlign.Center
+            )
+            Text(
+                stringResource(R.string.shoes_women),
+                modifier = Modifier.weight(1f),
+                textAlign = TextAlign.Center
+            )
         }
-        Row(modifier = Modifier.weight(1f).fillMaxWidth().padding(10.dp),
+        Row(modifier = Modifier
+            .weight(1f)
+            .fillMaxWidth()
+            .padding(10.dp),
             verticalAlignment = Alignment.CenterVertically){
-            Text("Tallas plus para mujer", modifier = Modifier.weight(1f))
+            Text(stringResource(R.string.sizes_women), modifier = Modifier.weight(1f))
             Images(R.drawable.img_04)
             Images(R.drawable.img_05)
             Images(R.drawable.img_06)
         }
         Row(modifier = Modifier.padding(10.dp)){
-            Text("Zapatos de mujer", modifier = Modifier.weight(1f))
-            Text("Vestidos de mujer",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-            Text("Herramientas de belleza",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-            Text("Cuidado del cabello",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
+            Text(stringResource(R.string.shoes_women), modifier = Modifier.weight(1f))
+            Text(
+                stringResource(R.string.dress_women),
+                modifier = Modifier.weight(1f),
+                textAlign = TextAlign.Center
+            )
+            Text(
+                stringResource(R.string.tools),
+                modifier = Modifier.weight(1f),
+                textAlign = TextAlign.Center
+            )
+            Text(
+                stringResource(R.string.hair),
+                modifier = Modifier.weight(1f),
+                textAlign = TextAlign.Center
+            )
         }
-        Row(modifier = Modifier.weight(1f).fillMaxWidth().padding(10.dp),
+        Row(modifier = Modifier
+            .weight(1f)
+            .fillMaxWidth()
+            .padding(10.dp),
             verticalAlignment = Alignment.CenterVertically){
-            Text("Lencería y pijamas de mujer", modifier = Modifier.weight(1f))
+            Text(stringResource(R.string.pajamas_women), modifier = Modifier.weight(1f))
             Images(R.drawable.img_07)
             Images(R.drawable.img_08)
             Images(R.drawable.img_09)
         }
         Row(modifier = Modifier.padding(10.dp)){
-            Text("Ropa de hombre", modifier = Modifier.weight(1f))
-            Text("Cuidado personal",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-            Text("Tops de hombre",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-            Text("Conjuntos de hombre",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
+            Text(stringResource(R.string.clothes_men), modifier = Modifier.weight(1f))
+            Text(
+                stringResource(R.string.personal_care),
+                modifier = Modifier.weight(1f),
+                textAlign = TextAlign.Center
+            )
+            Text(
+                stringResource(R.string.top_men),
+                modifier = Modifier.weight(1f),
+                textAlign = TextAlign.Center
+            )
+            Text(
+                stringResource(R.string.men_sets),
+                modifier = Modifier.weight(1f),
+                textAlign = TextAlign.Center
+            )
         }
-        Row(modifier = Modifier.weight(1f).fillMaxWidth().padding(10.dp),
+        Row(modifier = Modifier
+            .weight(1f)
+            .fillMaxWidth()
+            .padding(10.dp),
             verticalAlignment = Alignment.CenterVertically){
-            Text("Calzado de hombre", modifier = Modifier.weight(1f))
+            Text(stringResource(R.string.shoes_men), modifier = Modifier.weight(1f))
             Images(R.drawable.img_10)
             Images(R.drawable.img_12)
             Images(R.drawable.img_11)
         }
         Row(modifier = Modifier.padding(10.dp)){
-            Text("Tallas grandes de hombre", modifier = Modifier.weight(1f))
-            Text("Ropa de hombre",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-            Text("Accesorios de ejercicio y fitness",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
-            Text("Juguetes electrónicos",modifier = Modifier.weight(1f), textAlign = TextAlign.Center)
+            Text(stringResource(R.string.sizes_men), modifier = Modifier.weight(1f))
+            Text(
+                stringResource(R.string.clothes_men),
+                modifier = Modifier.weight(1f),
+                textAlign = TextAlign.Center
+            )
+            Text(
+                stringResource(R.string.tools_fitness),
+                modifier = Modifier.weight(1f),
+                textAlign = TextAlign.Center
+            )
+            Text(
+                stringResource(R.string.electro_games),
+                modifier = Modifier.weight(1f),
+                textAlign = TextAlign.Center
+            )
         }
     }
 }

@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">tarea08Compose1DDI</string>
+    <string name="featured">Destacado</string>
+    <string name="buy_category">Compra por categoría</string>
+    <string name="home">Hogar y cocina</string>
+    <string name="clothe_women">Ropa de mujer</string>
+    <string name="make_up">Maquillaje</string>
+    <string name="shirt_women">Blusas y camisas de mujer</string>
+    <string name="pants_women">Pantalones de mujer</string>
+    <string name="sizes_women">Tallas plus para mujer</string>
+    <string name="shoes_women">Zapatos de mujer</string>
+    <string name="dress_women">Vestidos de mujer</string>
+    <string name="tools">Herramientas de belleza</string>
+    <string name="hair">Cuidado del cabello</string>
+    <string name="pajamas_women">Lencería y pijamas de mujer</string>
+    <string name="clothes_men">Ropa de hombre</string>
+    <string name="personal_care">Cuidado personal</string>
+    <string name="top_men">Tops de hombre</string>
+    <string name="men_sets">Conjuntos de hombre</string>
+    <string name="shoes_men">Calzado de hombre</string>
+    <string name="sizes_men">Tallas grandes de hombre</string>
+    <string name="tools_fitness">Accesorios de ejercicio y fitness</string>
+    <string name="electro_games">Juguetes electrónicos</string>
 </resources>
